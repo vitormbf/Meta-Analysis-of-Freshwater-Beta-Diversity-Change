@@ -11,5 +11,6 @@ The study includes 493 reference–impact contrasts from 101 study cases and 63 
 
 ## Repository structure
 
-* `main_data/`: extracted data used in the analyses.
+* `Extraction dataset.xlsx`: extracted data used in the analyses.
 * `main_scripts/`: R scripts for data preparation, effect-size calculation, bootstrap procedures, leave-one-out bootstrap, and meta-regressions.
+* `spatial extent/`: spatial extent script and figures
