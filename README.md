@@ -1,7 +1,7 @@
 # Meta-Analysis-of-Freshwater-Beta-Diversity-Change
 Data and R scripts supporting a global meta-analysis of directional changes in freshwater β-diversity under anthropogenic impacts.
 
-# Overall Differentiation Amid Contrasting Freshwater β-Diversity Responses to Human Impacts 
+# Title: Overall Differentiation Amid Contrasting Freshwater β-Diversity Responses to Human Impacts 
 
 # Author: Vitor M. B. Ferreira
 
