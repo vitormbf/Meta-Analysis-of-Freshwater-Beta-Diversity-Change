@@ -1,0 +1,6 @@
+A6 - Spatial extent from the article utilized. Reason: too discrepant, probably due to altitude differences, as shown in the map.
+A25 - Partial spatial overlap with A21 (Hongze Lake). Although both studies are before-after fish studies from China and share one lake, they differ in spatial coverage, disturbance context, and temporal windows. The overlap was considered partial and insufficient to justify excluding either study.
+A32 - The map in the article is not geographically accurate. Therefore, the study-case coordinates were visually estimated using Google Earth based on the map provided in the article. We retained the estimated spatial extent because this limitation affects only the approximate position of the coordinates, not the spatial extent value used in the analysis.
+A37 - There is a transboundary lake (Doirani) with latitude around 21º. For this ID, we used the medoid (21.17941, 38.75113) in the map, because the centroid (22.65529, 33.3095) is in the ocean.
+A59 - The map in the article was probably not accurate.
+A60 - The map in the article was probably not accurate.
