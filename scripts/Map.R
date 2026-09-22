@@ -6,9 +6,8 @@ library(rnaturalearthdata)
 
 clean_num <- function(x) as.numeric(gsub("[^0-9.-]", "", as.character(x)))
 
-# -------------------------
-# CLEAN COORDINATES
-# -------------------------
+## CLEAN COORDINATES ##
+
 map_data <- data %>%
   mutate(
     Longitude = clean_num(Longitude),
@@ -22,32 +21,25 @@ map_data <- data %>%
   ) %>%
   distinct(Longitude, Latitude)
 
-# -------------------------
-# CONVERT POINTS TO SF
-# -------------------------
+## CONVERT POINTS TO SF ##
+
 pts <- st_as_sf(
   map_data,
   coords = c("Longitude", "Latitude"),
   crs = 4326
 )
 
-# -------------------------
-# WORLD MAP
-# -------------------------
+
+## WORLD MAP ##
+
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
-# -------------------------
-# GRATICULE
-# -------------------------
 graticule <- st_graticule(
   lon = seq(-180, 180, 60),
   lat = seq(-60, 60, 30),
   crs = 4326
 )
 
-# -------------------------
-# LONGITUDE/LATITUDE LABELS
-# -------------------------
 lon_labels <- data.frame(
   lon = seq(-180, 180, 60),
   lat = -88,
@@ -60,9 +52,8 @@ lat_labels <- data.frame(
   label = c("60°S", "30°S", "0°", "30°N", "60°N")
 )
 
-# -------------------------
-# MAP
-# -------------------------
+## MAP ##
+
 map <- ggplot() +
   geom_sf(
     data = graticule,
@@ -132,3 +123,5 @@ data %>%
   summarise(
     n_sampled_regions = n_distinct(Region)
   )
+
+## END ##
