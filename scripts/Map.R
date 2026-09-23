@@ -4,8 +4,6 @@ library(sf)
 library(rnaturalearth)
 library(rnaturalearthdata)
 
-clean_num <- function(x) as.numeric(gsub("[^0-9.-]", "", as.character(x)))
-
 ## CLEAN COORDINATES ##
 
 map_data <- data %>%
@@ -28,7 +26,6 @@ pts <- st_as_sf(
   coords = c("Longitude", "Latitude"),
   crs = 4326
 )
-
 
 ## WORLD MAP ##
 
