@@ -1,7 +1,7 @@
 # Meta-Analysis-of-Freshwater-Beta-Diversity-Change
 Data and R scripts supporting a global meta-analysis of directional changes in freshwater β-diversity under anthropogenic impacts.
 
-# Title: Overall Biotic Differentiation Amid Contrasting Freshwater β-Diversity Responses to Human Impacts 
+# Title: Global Evidence for Biotic Differentiation Amid Contrasting Freshwater β-Diversity Responses to Human Impacts 
 
 # Author: Vitor M. B. Ferreira
 
@@ -16,7 +16,7 @@ Data and R scripts supporting a global meta-analysis of directional changes in f
 
 * `figures/`: contain all the figures of both the manuscript and supplementary material.
   * `spatial_extent_files/`: spatial extents of each sampled region with available spatial information. Article ID (A1, A2...) can be found in `Extraction dataset.xlsx`.
-  * `spatial_overla_check/`: cross-check of segregated study cases with available spatial information.
+  * `spatial_overlap_check/`: cross-check of segregated study cases with available spatial information.
 
 
 * `scripts/`:
